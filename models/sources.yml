@@ -1,0 +1,36 @@
+version: 2
+
+sources:
+  - name: spectacle
+    description: Ingestion brute des dataset data.gouv.fr/declaration des entrepreneurs spectacles vivants et /liste de spectacles vivants
+    database: licences-spectacles
+    schema: spectacle
+    tables:
+      - name: lic_spec_full
+        description: déclaration des entrepreneurs de spectacle vivants depuis 2020
+        columns:
+          - name: numero_de_recepisse
+            description: Primary key 
+            tests:
+              - unique
+              - not_null
+          - name: date_de_depot_de_la_declaration_inscrite_sur_le_recepisse
+          - name: date_de_validite_du_recepisse_sauf_opposition_de_l_administration
+          - name: categorie
+          - name: type
+          - name: region
+          - name: nom_du_lieu
+          - name: code_naf_ape
+          - name: departement
+          - name: type_de_declarant
+          - name: code_postal_du_lieu
+          - name: statut_du_recepisse
+          - name: siren_personne_physique_siret_personne_morale
+          - name: raison_sociale_personne_morale_ou_nom_personne_physique
+          - name: code_postal_de_l_etablissement_principal_personne_morale_ou_de_la_personne_physique 
+
+      - name: liste_festival
+        description : liste festivals
+        database: licences-spectacles
+        schema: liste_festival
+
