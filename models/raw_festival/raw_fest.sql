@@ -1,0 +1,32 @@
+select
+    identifiant
+    , geocodage_xy
+    , adresse_e_mail
+    , nom_de_la_voie
+    , numero_de_voie
+    , adresse_postale
+    , identifiant_cnm
+    , nom_du_festival
+    , code_insee_commune
+    , discipline_dominante
+    , identifiant_agence_a
+    , envergure_territoriale
+    , sous_categorie_musique
+    , site_internet_du_festival
+    , sous_categorie_musique_cnm
+    , annee_de_creation_du_festival
+    , libelle_epci_collage_en_valeur
+    , complement_d_adresse_facultatif
+    , sous_categorie_spectacle_vivant
+    , decennie_de_creation_du_festival
+    , region_principale_de_deroulement
+    , code_insee_epci_collage_en_valeur
+    , commune_principale_de_deroulement
+    , sous_categorie_livre_et_litterature
+    , departement_principal_de_deroulement
+    , sous_categorie_cinema_et_audiovisuel
+    , type_de_voie_rue_avenue_boulevard_etc
+    , periode_principale_de_deroulement_du_festival
+    , sous_categorie_arts_visuels_et_arts_numeriques
+    , code_postal_de_la_commune_principale_de_deroulement
+from licences-spectacles.spectacle.liste_festivals
