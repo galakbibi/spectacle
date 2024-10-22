@@ -4,6 +4,7 @@ SELECT numero_de_recepisse
 , categorie
 , type
 , region
+, geoloc_cp
 , nom_du_lieu
 , code_naf_ape
 , departement
