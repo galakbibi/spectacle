@@ -19,6 +19,7 @@ sources:
           - name: categorie
           - name: type
           - name: region
+          - name: geoloc_cp
           - name: nom_du_lieu
           - name: code_naf_ape
           - name: departement
