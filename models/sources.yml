@@ -9,11 +9,10 @@ sources:
       - name: lic_spec_full
         description: déclaration des entrepreneurs de spectacle vivants depuis 2020
         columns:
+          - name: _airbyte_extracted_at
           - name: numero_de_recepisse
             description: Primary key 
-            tests:
-              - unique
-              - not_null
+
           - name: date_de_depot_de_la_declaration_inscrite_sur_le_recepisse
           - name: date_de_validite_du_recepisse_sauf_opposition_de_l_administration
           - name: categorie

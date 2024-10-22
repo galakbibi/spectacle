@@ -1,4 +1,6 @@
-SELECT numero_de_recepisse
+SELECT 
+
+numero_de_recepisse
 , date_de_depot_de_la_declaration_inscrite_sur_le_recepisse
 , date_de_validite_du_recepisse_sauf_opposition_de_l_administration
 , categorie
@@ -16,4 +18,5 @@ SELECT numero_de_recepisse
 , code_postal_de_l_etablissement_principal_personne_morale_ou_de_la_personne_physique
 
 FROM licences-spectacles.spectacle.lic_spec_full
-ORDER BY date_de_depot_de_la_declaration_inscrite_sur_le_recepisse DESC
+QUALIFY ROW_NUMBER() OVER (PARTITION BY numero_de_recepisse ORDER BY _airbyte_extracted_at DESC) = 1
+ORDER BY numero_de_recepisse
