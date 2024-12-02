@@ -6,8 +6,8 @@ sources:
     database: licences-spectacles
     schema: spectacle
     tables:
-      - name: lic_spec_full
-        description: déclaration des entrepreneurs de spectacle vivants depuis 2020
+      - name: lic_spec_2020
+        description: déclaration des entrepreneurs de spectacle vivants 2020
         columns:
           - name: _airbyte_extracted_at
           - name: numero_de_recepisse
@@ -28,7 +28,95 @@ sources:
           - name: siren_personne_physique_siret_personne_morale
           - name: raison_sociale_personne_morale_ou_nom_personne_physique
           - name: code_postal_de_l_etablissement_principal_personne_morale_ou_de_la_personne_physique 
+          
+      - name: lic_spec_2021
+        description: déclaration des entrepreneurs de spectacle vivants 2021
+        columns:
+          - name: _airbyte_extracted_at
+          - name: numero_de_recepisse
+            description: Primary key 
 
+          - name: date_de_depot_de_la_declaration_inscrite_sur_le_recepisse
+          - name: date_de_validite_du_recepisse_sauf_opposition_de_l_administration
+          - name: categorie
+          - name: type
+          - name: region
+          - name: geoloc_cp
+          - name: nom_du_lieu
+          - name: code_naf_ape
+          - name: departement
+          - name: type_de_declarant
+          - name: code_postal_du_lieu
+          - name: statut_du_recepisse
+          - name: siren_personne_physique_siret_personne_morale
+          - name: raison_sociale_personne_morale_ou_nom_personne_physique
+          - name: code_postal_de_l_etablissement_principal_personne_morale_ou_de_la_personne_physique 
+      - name: lic_spec_2022
+        description: déclaration des entrepreneurs de spectacle vivants 2022
+        columns:
+          - name: _airbyte_extracted_at
+          - name: numero_de_recepisse
+            description: Primary key 
+
+          - name: date_de_depot_de_la_declaration_inscrite_sur_le_recepisse
+          - name: date_de_validite_du_recepisse_sauf_opposition_de_l_administration
+          - name: categorie
+          - name: type
+          - name: region
+          - name: geoloc_cp
+          - name: nom_du_lieu
+          - name: code_naf_ape
+          - name: departement
+          - name: type_de_declarant
+          - name: code_postal_du_lieu
+          - name: statut_du_recepisse
+          - name: siren_personne_physique_siret_personne_morale
+          - name: raison_sociale_personne_morale_ou_nom_personne_physique
+          - name: code_postal_de_l_etablissement_principal_personne_morale_ou_de_la_personne_physique 
+      - name: lic_spec_2023
+        description: déclaration des entrepreneurs de spectacle vivants 2023
+        columns:
+          - name: _airbyte_extracted_at
+          - name: numero_de_recepisse
+            description: Primary key 
+
+          - name: date_de_depot_de_la_declaration_inscrite_sur_le_recepisse
+          - name: date_de_validite_du_recepisse_sauf_opposition_de_l_administration
+          - name: categorie
+          - name: type
+          - name: region
+          - name: geoloc_cp
+          - name: nom_du_lieu
+          - name: code_naf_ape
+          - name: departement
+          - name: type_de_declarant
+          - name: code_postal_du_lieu
+          - name: statut_du_recepisse
+          - name: siren_personne_physique_siret_personne_morale
+          - name: raison_sociale_personne_morale_ou_nom_personne_physique
+          - name: code_postal_de_l_etablissement_principal_personne_morale_ou_de_la_personne_physique 
+      - name: lic_spec_2024
+        description: déclaration des entrepreneurs de spectacle vivants 2020
+        columns:
+          - name: _airbyte_extracted_at
+          - name: numero_de_recepisse
+            description: Primary key 
+
+          - name: date_de_depot_de_la_declaration_inscrite_sur_le_recepisse
+          - name: date_de_validite_du_recepisse_sauf_opposition_de_l_administration
+          - name: categorie
+          - name: type
+          - name: region
+          - name: geoloc_cp
+          - name: nom_du_lieu
+          - name: code_naf_ape
+          - name: departement
+          - name: type_de_declarant
+          - name: code_postal_du_lieu
+          - name: statut_du_recepisse
+          - name: siren_personne_physique_siret_personne_morale
+          - name: raison_sociale_personne_morale_ou_nom_personne_physique
+          - name: code_postal_de_l_etablissement_principal_personne_morale_ou_de_la_personne_physique 
       - name: liste_festivals
         description : liste festivals
         database: licences-spectacles
