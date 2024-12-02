@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: raw_lic_spec
+    description: aggregat 2020 - 2024
+    columns:
+      - name: _airbyte_extracted_at
+
+      - name: numero_de_recepisse
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: date_de_depot_de_la_declaration_inscrite_sur_le_recepisse
+        description: date de dépôt du dossier
+      - name: date_de_validite_du_recepisse_sauf_opposition_de_l_administration
+        description: validité du récépissé
+      - name: categorie
+        description: numéro de licence 1,2,3
+      - name: type
+        description: première demande ou renouvellement
+      - name: region
+        description: région française , Grand-Est, Occitanie...
+      - name: geoloc_cp
+        description: localisation géographique latitude longitude, format json
+      - name: nom_du_lieu
+        description: nom du lieu
+      - name: code_naf_ape
+        description: code
+      - name: departement
+        description: département
+      - name: type_de_declarant
+        description: personne morale ou personne physique
+      - name: code_postal_du_lieu
+      - name: statut_du_recepisse
+        description: valide, invalide, invalidé
+      - name: siren_personne_physique_siret_personne_morale
+        description: numéro de siret
+      - name: raison_sociale_personne_morale_ou_nom_personne_physique
+        description: nom de l'entreprise
+      - name: code_postal_de_l_etablissement_principal_personne_morale_ou_de_la_personne_physique
+        description: code postal
